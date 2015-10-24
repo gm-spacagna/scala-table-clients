@@ -7,9 +7,6 @@ import com.twitter.logging.Logger
 import scala.Array.canBuildFrom
 
 class HiveClient(hiveServer: String, port: String = 10000) {
-
-  def this() = this("prod-ih-ve1.vega.ironport.com")
-
   val DriverName = "org.apache.hadoop.hive.jdbc.HiveDriver"
   val FetchSize = 10000
   try {
